@@ -1,0 +1,44 @@
+seed: 2
+model: funit
+
+max_iter: 800000
+g_lr: 1e-4
+d_lr: 1e-4
+weight_decay: 1e-4
+
+trainer:
+  resume:
+  force_resume: False
+  work_dir: ./result/funit
+  # Losses
+  gan_w: 1.0
+  fm_w: 1.0
+  r_w: 0.1
+  # Display
+  save: all-last
+  print_freq: 1000
+  val_freq: 10000
+  save_freq: 50000
+  tb_freq: 100
+
+# model options
+gen:
+  nf: 64                      # number of base filters in the generator
+  n_res_blks: 2               # number of residual blocks in content encoder/decoder
+  nf_mlp: 256                 # number of base filters in MLP module
+  latent_dim: 64              # dimension of the latent code for the class model
+  n_mlp_blks: 3               # number of mlp blocks
+  down_content: 3          # number of downsampling layers in content encoder
+  down_class: 4            # number of downsampling layers in class model encoder
+dis:
+  nf: 64                      # base number of filters
+  n_res_blks: 4             # number of residual blocks in the discriminator
+  
+# Dataset
+dset:
+  loader:
+    batch_size: 32
+    num_workers: 8
+  train:
+    chars: 
+    n_in_s: 1

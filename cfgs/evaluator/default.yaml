@@ -1,0 +1,21 @@
+seed: 2
+model: evaluator
+
+lr: 0.0002
+
+trainer:
+  resume:
+  work_dir: ./result/evaluator
+  cutmix_prob: 0.5
+  beta: 0.5
+  log_iter: 1000
+  save_epoch: 10
+  max_epoch: 20
+
+dset:
+  loader:
+    batch_size: 128
+    num_workers: 16
+  train:
+    save_list: True
+    save_list_dir: ./data/eval

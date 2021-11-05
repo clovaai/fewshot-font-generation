@@ -1,0 +1,9 @@
+dset:
+  test:
+    extension: ttf
+    data_dir: data_example/chn/ttf
+    source_path: data/chn/source.ttf
+    source_ext: ttf
+    ref_chars: data/chn/ref_chars.json
+    gen_chars: data/chn/gen_chars.json
+

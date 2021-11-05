@@ -1,0 +1,11 @@
+style_model_path: weights/evaluator/ftransgan.pth
+content_model_path: weights/evaluator/ftransgan.pth
+
+dset:
+  test:
+    data_dir: path/to/your/generated/images
+    gt_dir: [(FTransGAN_root)/train/chinese, (FTransGAN_root)/test_unknown_style/chinese, (FTransGAN_root)/test_unknown_content/chinese]
+    gt_extension: png
+    keylist: weights/evaluator/eval_keys.json
+    charlist: weights/evaluator/eval_chars.json
+    

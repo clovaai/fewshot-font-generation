@@ -1,0 +1,14 @@
+trainer:
+  work_dir: ./result/evaluator
+  max_epoch: 90
+
+dset:
+  train:
+    data_dir: data_example/chn/ttf
+    chars: data/chn/eval_chars.json
+    extension: ttf
+    save_list: True
+  val:
+    n_val_example: 128
+    data_dir: data_example/chn/ttf
+    extension: ttf

@@ -1,0 +1,46 @@
+seed: 2
+model: mx
+
+# Decomposition rule
+decomposition:
+primals:
+
+max_iter: 800000
+g_lr: 2e-4
+d_lr: 1e-3
+ac_lr: 2e-4
+adam_betas: [0.0, 0.9]
+
+trainer:
+  resume:
+  force_resume: False
+  work_dir: ./result/mx
+  # Losses
+  pixel_loss_type: l1
+  pixel_w: 0.1
+  gan_w: 1.0
+  fm_layers: all
+  fm_w: 1.0
+  ac_w: 1.0
+  ac_gen_w: 1.0
+  ac_cross_w: 0.0
+  indp_exp_w: 1.0
+  indp_fact_w: 1.0
+  # Display
+  save: all-last
+  print_freq: 1000
+  val_freq: 10000
+  save_freq: 50000
+  tb_freq: 100
+
+gen:
+  n_experts: 6
+  n_emb: 2
+  
+dset:
+  loader:
+    batch_size: 8
+    num_workers: 16
+  train:
+    n_in_s: 3
+    n_in_c: 3

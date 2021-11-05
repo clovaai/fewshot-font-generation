@@ -1,0 +1,10 @@
+tqdm
+jsonlib-python3
+msgpack>=1.0.0
+sconf
+scipy
+scikit-image
+fonttools
+adamp
+lpips
+tensorboardX

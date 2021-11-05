@@ -1,0 +1,2 @@
+decomposition: data/chn/decomposition.json   # path to the "decomposition rule" file.
+primals: data/chn/primals.json

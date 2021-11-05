@@ -1,0 +1,8 @@
+dset:
+  test:
+    extension: png
+    data_dir: (FTransGAN_root)/test_unknown_style/chinese
+    source_path: (FTransGAN_root)/test_unknown_style/source
+    source_ext: png
+    ref_chars: data/chn/ftransgan/seen_chars.json
+    gen_chars: data/chn/ftransgan/eval_chars.json

@@ -1,0 +1,31 @@
+dset:   # leave blank
+  train:   # leave blank
+    data_dir: (FTransGAN_root)/train/chinese
+    chars:
+    extension: png
+  val:
+    ufsc:
+      data_dir: (FTransGAN_root)/test_unknown_style/chinese
+      extension: png
+      n_gen: 20
+      n_font: 5
+      chars:
+      source_path: (FTransGAN_root)/test_unknown_style/source
+      source_ext: png
+    sfuc:
+      data_dir: (FTransGAN_root)/test_unknown_content/chinese
+      extension: png
+      n_gen: 20
+      n_font: 5
+      chars:
+      source_path: (FTransGAN_root)/test_unknown_content/source
+      source_ext: png
+    sfsc:
+      data_dir: (FTransGAN_root)/train/chinese
+      extension: png
+      n_gen: 20
+      n_font: 5
+      chars:
+      source_path: (FTransGAN_root)/train/source
+      source_ext: png
+

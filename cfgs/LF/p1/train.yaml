@@ -1,0 +1,12 @@
+decomposition: data/chn/decomposition.json
+primals: data/chn/primals.json
+
+trainer:
+  resume:
+  work_dir: ./result/lf1
+
+dset:
+  train:
+    source_path: data/chn/source.ttf
+    source_ext: png
+  

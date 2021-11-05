@@ -1,0 +1,9 @@
+dset:
+  test:
+    extension: ttf
+    data_dir: data_example/kor/ttf
+    source_path: data/kor/source.ttf
+    source_ext: ttf
+    ref_chars: data/kor/ref_chars.json
+    gen_chars: data/kor/gen_chars.json
+

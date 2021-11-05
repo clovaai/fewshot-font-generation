@@ -1,0 +1,6 @@
+decomposition: data/kor/decomposition_DM.json   # path to the "decomposition rule" file.
+n_primals: 68   # Number of entire primals.
+
+trainer:
+  resume:
+  work_dir: ./result/dm

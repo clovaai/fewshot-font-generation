@@ -1,0 +1,9 @@
+decomposition: data/chn/decomposition.json   # path to the "decomposition rule" file.
+primals: data/chn/primals.json   # path to the "primals" file.
+
+trainer:
+  resume:
+  work_dir: ./result/mx   # the directory to save checkpoints, validation images, and the log.
+  
+gen:
+  n_experts: 6

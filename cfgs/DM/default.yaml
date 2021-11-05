@@ -1,0 +1,48 @@
+seed: 2
+model: dm
+
+# Decomposition rule
+decomposition:
+n_primals:
+
+# Optimizer
+max_iter: 300000
+g_lr: 2e-4
+d_lr: 8e-4
+ac_lr: 2e-4
+adam_betas: [0.0, 0.9]
+
+# Trainer
+trainer:
+  resume: 
+  force_resume: False
+  work_dir: ./result/dm
+  # Losses
+  pixel_loss_type: l1
+  pixel_w: 0.1
+  gan_w: 1.0
+  fm_layers: all
+  fm_w: 1.0
+  ac_w: 0.1
+  ac_gen_w: 0.1
+  fact_const_w: 0.
+  # Display
+  save: all-last
+  print_freq: 1000
+  val_freq: 10000
+  save_freq: 50000
+  tb_freq: 100
+
+# Generator
+gen:
+  n_heads: 3
+
+# Dataloader
+dset:
+  loader:
+    batch_size: 8
+    num_workers: 16
+  train:
+    n_in_s: 3
+    n_in_min: 1
+    n_in_max: 4

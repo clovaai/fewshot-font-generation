@@ -1,0 +1,14 @@
+decomposition: data/chn/decomposition.json
+primals: data/chn/primals.json
+
+trainer:
+  resume:
+  work_dir: ./result/lf2
+
+dset:
+  train:
+    source_path: data/chn/source.ttf
+    source_ext: ttf
+    
+gen:
+  emb_dim: 8

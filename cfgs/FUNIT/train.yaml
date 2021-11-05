@@ -1,0 +1,11 @@
+trainer:
+  resume:
+  work_dir: ./result/funit
+
+dset:
+  train:
+    source_path: data/chn/source.ttf
+    source_ext: ttf
+
+
+

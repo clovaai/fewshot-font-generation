@@ -1,0 +1,23 @@
+dset:   # leave blank
+  train:   # leave blank
+    data_dir: data_example/chn/ttf
+    chars: data/chn/train_chars.json
+    extension: ttf
+  val:
+    unseen_chars:
+      data_dir: data_example/chn/ttf
+      extension: ttf
+      n_gen: 20
+      n_font: 5
+      chars: data/chn/val_unseen_chars.json
+      source_path: data/chn/source.ttf
+      source_ext: ttf
+    seen_chars:
+      data_dir: data_example/chn/ttf
+      extension: ttf
+      n_gen: 20
+      n_font: 5
+      chars: data/chn/val_seen_chars.json
+      source_path: data/chn/source.ttf
+      source_ext: ttf
+
