@@ -7,7 +7,7 @@ import sys
 from tqdm import tqdm
 from pathlib import Path
 
-from datasets import get_filtered_chars
+from base.dataset import get_filtered_chars
 
 
 def main():

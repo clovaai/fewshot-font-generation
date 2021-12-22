@@ -23,8 +23,8 @@ The example font files are downloaded from [here(chinese)](https://www.freechine
         * **its available characters**: data/ttfs/train/MaShanZheng-Regular.txt
     * You can also generate the available characters files automatically using the get_chars_from_ttf.py
     * How to use:
-        * `python get_chars_from_ttf.py --root_dir path/to/ttf/dir`
-        * **--root_dir**: The root directory to find the .ttf files. All the .ttf files under this directory and its subdirectories will be processed.
+        * `python get_chars_from_ttf.py path/to/ttf/dir`
+        * **path/to/ttf/dir**: The root directory to find the .ttf files. All the .ttf files under this directory and its subdirectories will be processed.
     ---
 
 ### 1.2. Prepare Image files
