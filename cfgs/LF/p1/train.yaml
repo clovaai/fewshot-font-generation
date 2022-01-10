@@ -8,5 +8,5 @@ trainer:
 dset:
   train:
     source_path: data/chn/source.ttf
-    source_ext: png
+    source_ext: ttf
   
