@@ -49,11 +49,12 @@ You do not need to give these arguments if you are using a single GPU.
 ## Phase 2 training
 
 ```
-python train_LF.py cfgs/LF/p2/train.yaml cfgs/data/train/custom.yaml --phase 2 --work_dir(optional) path/to/save/outputs
+python train_LF.py cfgs/LF/p2/train.yaml cfgs/data/train/custom.yaml --resume path/to/phase1/weights --phase 2 --work_dir(optional) path/to/save/outputs
 ```
 * **arguments**
   * path/to/config (first argument, multiple values are allowed): path to configration file.
     * Multiple values are allowed but the first one should locate in `cfgs/LF/p2`.
+  * \-\-resume : path to the weight which saved by phase 1 training.
   * \-\-phase : The training phase. 1 or 2 is available.
   * \-\-work_dir(optional) : path to save outputs. The `trainer.work_dir` in the configuration file will be overwrited to this value.
 
