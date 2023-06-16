@@ -36,7 +36,8 @@ Please do not modify the indentation, because the indentation rule is very impor
 
 # Evaluating
 
-We provide weights of the classifiers trained with FTransGAN Dataset. (weights/evaluator_ftransgan_20epoch.pth)
+We provide weights of the classifiers trained with FTransGAN Dataset. ([Download](https://drive.google.com/file/d/1RzB8AwV7RgsoDk9IUpUpkKK6xUvlmAeG/view?usp=share_link))
+
 The list of labels are also provided in "data/chn/ftransgan/eval_keys.json" and "data/chn/ftransgan/eval_chars.json".
 
 ## 1. Modify the data configuration file ("cfgs/evaluator/eval_ftransgan.yaml")
